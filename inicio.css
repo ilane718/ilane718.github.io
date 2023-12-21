@@ -1,0 +1,100 @@
+/* alterando cor dos links */
+a,a:focus,a:hover {
+  color: #fff;
+}
+
+/* estilizando o botão, alterando sombra do texto, borda e cor da fonte.*/
+.btn-secondary,.btn-secondary:hover,.btn-secondary:focus {
+  color: #333;
+  text-shadow: none;
+  background-color: #fff;
+  border: .05rem solid #fff;
+}
+
+
+/* estilizando o corpo do site, alterando altura e cor de fundo.*/
+
+html,body {
+  height: 100%;
+  background-color: #333;
+}
+
+/*estilizando o corpo do site, alterando display, cor da fonte, a sombra do texto e adicionando uma imagem de fundo */
+/*e estilizando a imagem, centralizando e ajustando o tamanho.*/
+body {
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+  background-image: url('imagens/YNinicio.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*alterando a largura dos elementos do site.*/
+.cover-container {
+  max-width: 42em;
+}
+
+
+/*fazendo alterações no menu, alterando a cor, espaçamento, cor de fundo e borda*/
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: 700;
+  color: white;
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+/*colocando borda ao passar o mouse nos links do menu*/
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+/*alterando a margin, para os links do menu não ficarem colados*/
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+/*colocando uma borda no link "home", que fica ativa independente.*/
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+/*fazendo alterações no cabeçalho para eles ficarem separados, o "inicio" fica a esquerda, enquanto os outros links na direita*/
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}
+
+
+/*alterando o padding(espaçamento) entre os elementos*/
+.cover {
+  padding: 0 1.5rem;
+}
+
+/*alterando o padding(espaçamento) do botão e mudando a fonte*/
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+
+
+/* alterando a cor do footer, no final do site*/
+.mastfoot {
+  color: rgba(255, 255, 255, .5);
+}
+
+/*alterando a sombra dos elementos do dropdown menu*/
+.dropdown-menu{
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0);
+}
+

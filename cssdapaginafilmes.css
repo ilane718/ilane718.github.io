@@ -1,0 +1,90 @@
+/*alterando a cor do corpo do site e a cor da fonte.*/
+body {
+	background-color: black;
+	color: white;
+	
+}
+
+/*alterando a cor do jumbotron*/
+.jumbotron {
+	background-color: black;
+}
+
+/* alterando a barra de navegação para transparente inicialmente */
+/* mudando a cor de fundo quando a barra de rolagem é acionada */
+.navbar {
+	background-color: #0c0c0c;
+}
+
+/* alterando a barra de navegação para opaca ao rolar para baixo */
+/* mudando a cor de fundo inicial (transparente) */
+.navbar-scrolled {
+	background-color: rgba(0, 0, 0, 0.3);
+	transition: background-color 0.5s ease; /* Transição suave */
+}
+
+/*adicionando uma borda ao titulo(h1) com padding em 5px.*/
+h1 {
+	
+	border-left: 4px solid #2bd2f7; /* Cor e largura da borda esquerda */
+	padding: 5px;
+
+}
+
+/* estilizando a grade de miniaturas, alterando seu display e espaçamento.*/
+        .thumbnail-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 50px;
+            padding: 16px;
+        }
+
+        /* estilizando cada miniatura, alterando sua posição. */
+        .thumbnail-container {
+            position: relative;
+        }
+
+       /* estilizando cada miniatura, alterando sua largura, altura, borda e adicionando transição.. */
+        .thumbnail {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        /* estilando a descrição abaixo das miniaturas, centralizando, alterando a margin e display.*/
+        .thumbnail-description {
+            text-align: center;
+            margin-top: 22px;
+            display: none;
+        }
+
+        /* estilizando para exibir a descrição ao passar o mouse sobre a miniatura */
+        .thumbnail-container:hover .thumbnail-description {
+            display: block;
+            
+        }
+
+        /* colocando um efeito de escala ao passar o mouse sobre a miniatura */
+        .thumbnail-container:hover .thumbnail {
+            transform: scale(1.1);
+        }
+        
+        
+        /* alterando o container do banner centralizando-o, alterando largura e seu overflow. */
+        .banner-container {
+            text-align: center;
+            max-width: 100%;
+            overflow: hidden;
+            
+        }
+
+        /* estilizando a imagem do banner, alterando a largura, altura e borda */
+        .banner-image {
+            width: 80%; 
+            height: auto; 
+            border-radius: 6px;
+      
+	
+        }

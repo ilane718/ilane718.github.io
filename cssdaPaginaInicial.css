@@ -1,0 +1,48 @@
+/*alterando a cor do corpo do site e a cor da fonte.*/
+body {
+	background-color: black;
+	color: white;
+}
+/*alterando a cor do jumbotron*/
+.jumbotron {
+	background-color: black;
+}
+
+/*alterando a cor do texto do card*/
+.card-text {
+	color: black;
+}
+
+/*alterando a cor do titulo do card*/
+.card-title{
+	color: black;
+}
+
+/* alterando a barra de navegação para transparente inicialmente */
+/* mudando a cor de fundo quando a barra de rolagem é acionada */
+.navbar {
+	background-color: #0c0c0c;
+}
+
+/* alterando a barra de navegação para opaca ao rolar para baixo */
+/* mudando a cor de fundo inicial (transparente) */
+.navbar-scrolled {
+	background-color: rgba(0, 0, 0, 0.3);
+	transition: background-color 0.5s ease; /* Transição suave */
+}
+
+/*adicionando uma borda ao titulo(h1) com padding em 5px.*/
+h1 {
+	border-left: 4px solid #9f064b; /* Cor e largura da borda esquerda */
+	padding: 5px;
+
+}
+
+
+
+
+
+
+
+
+
